@@ -80,12 +80,12 @@ const DealProductCard = ({ products }) => {
         </div>
       </div>
 
-      
-       <div className="text-center mt-8">
-          <button className=" px-10 rounded-lg py-2 border text-[17px] divide-purple-300 hover:bg-[#6F42C1] duration-500 bg-[#7E53D4] tracking-wide text-white">
-            See more
-          </button>
-        </div>
+
+      <div className="text-center mt-8">
+        <button className=" px-10 rounded-lg py-2 border text-[17px] divide-purple-300 hover:bg-[#6F42C1] duration-500 bg-[#7E53D4] tracking-wide text-white">
+          See more
+        </button>
+      </div>
 
     </div>
   );

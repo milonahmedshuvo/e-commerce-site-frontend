@@ -13,8 +13,9 @@ import logo from "../../images/navlogo.png"
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
-
     const [cartCount, setCartCount] = useState(0);
+
+
 
     return (
         <div className=''>

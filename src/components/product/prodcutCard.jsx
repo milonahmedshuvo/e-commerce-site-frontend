@@ -8,7 +8,6 @@ import Link from "next/link";
 
 
 const ProductCard = ({ title, products }) => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(4);
 
@@ -89,24 +88,24 @@ const ProductCard = ({ title, products }) => {
                 className={`flex-none w-[312px] px-3  `}
               >
                 <div className="bg-white p-2 shadow-sm rounded-xl overflow-hidden">
-                <Link href={`product/${p.id}`} >
-                  <Image
-                    className="bg-bgcolor h-72"
-                    src={p.image}
-                    height={150}
-                    width={500}
-                    alt={p.name}
-                  />
-                  </Link> 
+                  <Link href={`product/${p.id}`} >
+                    <Image
+                      className="bg-bgcolor h-72"
+                      src={p.image}
+                      height={150}
+                      width={500}
+                      alt={p.name}
+                    />
+                  </Link>
                   <div className="w-full py-5">
                     <div className="flex gap-1 items-center tracking-wide justify-between">
                       <p className="text-[16px] text-[#1D1D1D] font-[400]">{p.name}</p>
                       <p className="text-[19px] text-[#1D1D1D] ">{p.price}</p>
                     </div>
                     <Link href={`product/${p.id}`} >
-                    <button className="w-full px-10 mt-5 rounded-[7px] py-[7px] border text-[16px] hover:bg-[#6F42C1] duration-500 border-[#7E53D4] tracking-wide hover:text-white">
-                      Add to cart
-                    </button>
+                      <button className="w-full px-10 mt-5 rounded-[7px] py-[7px] border text-[16px] hover:bg-[#6F42C1] duration-500 border-[#7E53D4] tracking-wide hover:text-white">
+                        Add to cart
+                      </button>
                     </Link>
                   </div>
                 </div>
