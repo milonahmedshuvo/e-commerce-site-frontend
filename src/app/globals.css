@@ -2,20 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+body{
+  background-color: #F4F8FF;
+  font-family: "Manrope", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.subtitle {
+  font-family: "Pacifico", cursive;
+}
+
+.numfont{
+  font-family: "Rubik", sans-serif;
+}
+
+
+.bg{
+  background-image: url("../images/hero.png");
+}
+
+.qualityImg{
+  background-image: url("../images/quality.png");
+  height: 80px; 
+}
+
+
+@media (min-width:300px) and (max-width:768px) {
+  .qualityImg{
+    background-image: url("../images/quality.png");
+    background-size: cover;
+  background-position:  center center center center ;
+  background-repeat: no-repeat;
+  height: 250px;
+  
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
