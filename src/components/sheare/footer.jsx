@@ -1,8 +1,8 @@
 import Image from "next/image"
 import logo from "../../images/logo.png"
-import Facebook from "../../images/facebook.png"
-import Twitter from "../../images/Twitter.png"
-import Linkedin from "../../images/Linkedin.png"
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa"
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Footer = () => {
     return (
@@ -57,10 +57,10 @@ const Footer = () => {
 
                 <div>
                     <p className="text-[#F4F8FF] text-[14px] mt-2 md:mt-0 text-center">Social Link</p>
-                    <div className="mt-2 md:mt-3 flex ">
-                        <Image className="mx-2" width={20} height={20} src={Facebook} alt="facebook" />
-                        <Image className="mx-2" width={20} height={20} src={Twitter}  alt="facebook" />
-                        <Image className="mx-2" width={20} height={20} src={Linkedin} alt="facebook" />
+                    <div className="mt-2 md:mt-3 flex gap-4 ">
+                        <FaFacebook className="bg-white rounded-full text-xl text-blue-600"></FaFacebook>
+                        <FaXTwitter className="rounded-full text-xl text-white"></FaXTwitter>
+                        <FaLinkedinIn className="bg-blue-600 p-[2px] rounded-full text-xl text-white"></FaLinkedinIn>
 
                     </div>
                 </div>

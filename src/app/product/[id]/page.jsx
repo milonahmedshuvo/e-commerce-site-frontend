@@ -39,9 +39,6 @@ const responsive = {
 
 
 
-
-
-
 const ProductDetailsPage = () => {
 
   const [selectedThumbnail, setSelectedThumbnail] = useState(0);
@@ -57,8 +54,6 @@ const ProductDetailsPage = () => {
   };
   const [quantity, setQuantity] = useState(1);
 
-
-
   const products = [
     { id: 1, name: "Indian Sharee", price: "BDT 2,300", image: img1 },
     { id: 2, name: "Hoodie", price: "BDT 3,500", image: img2 },
@@ -72,9 +67,6 @@ const ProductDetailsPage = () => {
     { id: 6, name: "Indian Sharee", price: "BDT 4,900", image: img1 },
     { id: 6, name: "Jacket", price: "BDT 4,200", image: img4 },
   ];
-
-
-
 
 
   return (
@@ -127,10 +119,6 @@ const ProductDetailsPage = () => {
               </Carousel>
             </div>
           </div>
-
-
-
-
         </div>
 
         {/* 2nd coloumn */}
@@ -187,8 +175,6 @@ const ProductDetailsPage = () => {
                   </div>
                 </div>
               </div>
-              {/* <p className="text-rose-600 my-5">It is 7 pice available</p> */}
-
               <div className="mt-5">
                 <label className="text-lg">Quentity</label>
                 <div className="flex bg-[#ECE9FE] items-center justify-between px-3 w-32 py-2 mt-2 rounded-full">
@@ -227,26 +213,6 @@ const ProductDetailsPage = () => {
 
       {/* product card  */}
       <div className="mt-32">
-        {/* <div className="flex items-center justify-between">
-          <h1 className="text-2xl md:text-3xl tracking-normal">Related Products</h1>
-          <div className="flex space-x-4 items-center justify-center">
-
-            <button
-              className="flex items-center justify-center w-9 border-2 border-[#7E53D4] h-9 rounded-full hover:text-white hover:bg-[#7E53D4] text-[#7E53D4] transition-all duration-300"
-              aria-label="Left Arrow"
-            >
-              <FiArrowLeft className="w-6 h-6" />
-            </button>
-
-
-            <button
-              className="flex items-center justify-center w-9 border-2 border-[#7E53D4] h-9 rounded-full hover:text-white hover:bg-[#7E53D4] text-[#7E53D4] transition-all duration-300"
-              aria-label="Right Arrow"
-            >
-              <FiArrowRight className="w-6 h-6" /> 
-            </button>
-          </div>
-        </div> */}
 
         <ProductCard title="Related Products" products={products} ></ProductCard>
 

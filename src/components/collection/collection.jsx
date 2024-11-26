@@ -8,7 +8,7 @@ const Collection = () => {
   return (
     <div className='flex flex-col md:flex-row gap-5 items-center mt-24 mb-16  '>
 
-          <div className='w-full md:w-1/2 flex justify-center'>
+          <div className='w-full md:w-1/2 flex justify-center px-5'>
           <Image className='w-full'  width={500} height={100} src={man} alt="man collections"  />
           </div>
 
