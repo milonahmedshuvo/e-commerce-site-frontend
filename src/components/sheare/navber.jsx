@@ -16,7 +16,6 @@ const Navbar = () => {
     const [cartCount, setCartCount] = useState(0);
 
 
-
     return (
         <div className=''>
             <nav className="w-full bg-[#F5F3FF] py-5">
